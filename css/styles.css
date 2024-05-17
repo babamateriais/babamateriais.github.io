@@ -1,0 +1,41 @@
+/* Estilos para o catálogo */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.catalog img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Estilos para o botão de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px; /* Ajusta a posição para ficar acima do botão de download */
+    right: 20px;
+}
+
+.whatsapp-button img {
+    width: 65px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Estilos para o botão de PDF */
+.pdf-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta a posição para ficar abaixo do botão do WhatsApp */
+    right: 20px;
+}
+
+.pdf-button img {
+    width: 35px; /* Ajusta o tamanho do ícone PDF para ser menor */
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
