@@ -9,15 +9,47 @@
 </head>
 <body>
 
+<!-- Barra de menu superior -->
+<div class="menu-bar">
+    <a href="#inicio">Início</a>
+    <a href="#basicos">Básicos</a>
+    <a href="#ceramica">Cerâmica</a>
+    <a href="#eletrica">Elétrica</a>
+    <a href="#loucas">Louças</a>
+    <a href="#metais">Metais</a>
+    <a href="#moveis">Móveis</a>
+    <a href="#tintas">Tintas</a>
+    <a href="#amanco">Amanco</a>
+    <a href="pdfs/catalogo.pdf" target="_blank">Baixar</a> <!-- Link para baixar o catálogo -->
+</div>
+
+<!-- Ícone de menu para dispositivos móveis -->
+<div class="menu-icon" onclick="openNav()">&#9776;</div>
+
+<!-- Menu lateral para dispositivos móveis -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#inicio">Início</a>
+    <a href="#basicos">Básicos</a>
+    <a href="#ceramica">Cerâmica</a>
+    <a href="#eletrica">Elétrica</a>
+    <a href="#loucas">Louças</a>
+    <a href="#metais">Metais</a>
+    <a href="#moveis">Móveis</a>
+    <a href="#tintas">Tintas</a>
+    <a href="#amanco">Amanco</a>
+    <a href="pdfs/catalogo.pdf" target="_blank">Baixar</a> <!-- Link para baixar o catálogo -->
+</div>
+
 <div class="catalog">
     <!-- Aqui você pode adicionar as imagens do seu catálogo -->
-    <img src="images/catalogo/1.jpg" alt="Capa">
+    <img id="inicio" src="images/catalogo/1.jpg" alt="Capa">
     <br>
-    <img src="images/catalogo/2.jpg" alt="Básicos">
+    <img id="basicos" src="images/catalogo/2.jpg" alt="Básicos">
     <br>
     <img src="images/catalogo/3.jpg" alt="Básicos">
     <br>
-    <img src="images/catalogo/4.jpg" alt="Cerâmica">
+    <img id="ceramica" src="images/catalogo/4.jpg" alt="Cerâmica">
     <br>
     <img src="images/catalogo/5.jpg" alt="Cerâmica">
     <br>
@@ -33,46 +65,44 @@
     <br>
     <img src="images/catalogo/11.jpg" alt="Cerâmica">
     <br>
-    <img src="images/catalogo/12.jpg" alt="Elétrica">
+    <img id="eletrica" src="images/catalogo/12.jpg" alt="Elétrica">
     <br>
     <img src="images/catalogo/13.jpg" alt="Elétrica">
     <br>
     <img src="images/catalogo/14.jpg" alt="Elétrica">
     <br>
-    <img src="images/catalogo/15.jpg" alt="Louças">
+    <img id="loucas" src="images/catalogo/15.jpg" alt="Louças">
     <br>
     <img src="images/catalogo/16.jpg" alt="Louças">
     <br>
     <img src="images/catalogo/17.jpg" alt="Louças">
     <br>
-    <img src="images/catalogo/18.jpg" alt="Metais">
+    <img id="metais" src="images/catalogo/18.jpg" alt="Metais">
     <br>
     <img src="images/catalogo/19.jpg" alt="Metais">
     <br>
     <img src="images/catalogo/20.jpg" alt="Metais">
     <br>
-    <img src="images/catalogo/21.jpg" alt="Móveis">
+    <img id="moveis" src="images/catalogo/21.jpg" alt="Móveis">
     <br>
-    <img src="images/catalogo/22.jpg" alt="Tintas e Impermeabilizantes">
+    <img id="tintas" src="images/catalogo/22.jpg" alt="Tintas e Impermeabilizantes">
     <br>
-    <img src="images/catalogo/23.jpg" alt="Amanco">
+    <img id="amanco" src="images/catalogo/23.jpg" alt="Amanco">
     <br>
     <img src="images/catalogo/24.jpg" alt="Contracapa">
     <!-- Adicione quantas imagens forem necessárias -->
 </div>
 
-<div class="pdf-button">
-    <a href="pdfs/catalogo.pdf" target="_blank">
-        <img src="images/download.png" alt="Baixar PDF">
-    </a>
-</div>
-
 <div class="whatsapp-button">
     <a href="https://api.whatsapp.com/send?phone=5516999916738&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
-        <img src="images/whatsapp_icon.png" alt="WhatsApp">
+        <img src="images/whatsapp_icon.png" alt="WhatsApp" id="whatsapp-icon">
     </a>
+    <div class="popup" id="popup">
+        Converse com um de nossos vendedores
+    </div>
 </div>
 
-<script src="script.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
