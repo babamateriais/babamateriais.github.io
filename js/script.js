@@ -1,9 +1,9 @@
 function toggleMenu() {
     const sideMenu = document.getElementById("sideMenu");
     if (sideMenu.style.width === "250px") {
-        closeNav(); // Fecha o menu
+        closeNav(); 
     } else {
-        openNav(); // Abre o menu
+        openNav();
     }
 }
 

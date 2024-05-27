@@ -2,13 +2,15 @@
 .menu-bar {
     display: flex;
     justify-content: center;
-    background-color: #0060b2; /* Laranja */
+    background-color: #0060b2;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    font-family: 'Arial', sans-serif; /* Fonte menos serifada */
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    border-radius: 10px; /* Arredonda os cantos */
 }
 
 .menu-bar a {
@@ -17,8 +19,8 @@
     font-size: 16px;
     color: white;
     transition: 0.3s;
-    border-radius: 10px; /* Adicionado para arredondar os botões */
-    font-family: 'Arial', sans-serif; /* Fonte menos serifada */
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
 }
 
 .menu-bar a:hover {
@@ -34,7 +36,12 @@
     top: 15px;
     left: 15px;
     z-index: 1001;
-    font-family: 'Arial', sans-serif; /* Fonte menos serifada */
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease; /* Adiciona efeito de transição */
+}
+
+.menu-icon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 
 /* Menu lateral */
@@ -45,11 +52,11 @@
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: #0060b2; /* Laranja */
+    background-color: #0060b2;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    font-family: 'Arial', sans-serif; /* Fonte menos serifada */
+    font-family: 'Arial', sans-serif;
 }
 
 .side-menu a {
@@ -59,7 +66,7 @@
     color: white;
     display: block;
     transition: 0.3s;
-    font-family: 'Arial', sans-serif; /* Fonte menos serifada */
+    font-family: 'Arial', sans-serif;
 }
 
 .side-menu a:hover {
@@ -71,7 +78,7 @@
     top: 0;
     right: 15px;
     font-size: 36px;
-    font-family: 'Arial', sans-serif; /* Fonte menos serifada */
+    font-family: 'Arial', sans-serif;
 }
 
 /* Estilos para o catálogo */
@@ -79,13 +86,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 60px; /* Espaço para a barra de menus fixa */
+    margin-top: 60px;
+    gap: 10px; /* Espaço entre as imagens */
+}
+
+.item { 
+    width: 0%; /* Define a largura para cada item no grid */
+    min-width: 200px; /* Define uma largura mínima para evitar imagens muito estreitas */
 }
 
 .catalog img {
     max-width: 100%;
     height: auto;
-    margin: 10px;
+}
+
+/* Ajusta a largura das imagens em telas maiores */
+@media screen and (min-width: 769px) {
+    .catalog img {
+        max-width: 50%; /* Reduz a largura da imagem para 90% do container */
+    }
 }
 
 /* Estilos para o botão de WhatsApp */
@@ -96,7 +115,7 @@
 }
 
 .whatsapp-button img {
-    width: 60px; /* Ajustar o tamanho do ícone */
+    width: 60px; 
     height: auto;
     cursor: pointer;
     border-radius: 50%;
@@ -110,6 +129,11 @@
 
     .menu-bar {
         display: none;
+    }
+
+    /* Ajusta o grid para uma coluna no mobile */
+    .item {
+        width: 100%;
     }
 }
 
