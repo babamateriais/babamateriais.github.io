@@ -1,3 +1,6 @@
+/* Importa a fonte do Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 /* Estilos para a barra de menus */
 .menu-bar {
     display: flex;
@@ -54,9 +57,10 @@
     left: 0;
     background-color: #0060b2;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.5s; 
     padding-top: 60px;
     font-family: 'Arial', sans-serif;
+    transition: width 0.5s ease; /* Adiciona a transição para a largura */
 }
 
 .side-menu a {
@@ -67,6 +71,7 @@
     display: block;
     transition: 0.3s;
     font-family: 'Arial', sans-serif;
+    transition: height 0.5s ease; /* Adiciona a transição para a altura */
 }
 
 .side-menu a:hover {
@@ -79,6 +84,18 @@
     right: 15px;
     font-size: 36px;
     font-family: 'Arial', sans-serif;
+}
+
+.side-menu a i { 
+    margin-left: 10px; /* Espaçamento entre o texto e o ícone */
+    font-size: 14px; /* Ajusta o tamanho do ícone, se necessário */
+    color: white; /* Define a cor do ícone */
+    float: right; /* Alinha o ícone à direita */
+}
+
+.side-menu a:hover i {
+    transform: translateX(5px); /* Desloca o ícone para a direita */
+    color: #ec7022; /* Muda a cor do ícone no hover */
 }
 
 /* Estilos para o catálogo */
