@@ -93,7 +93,6 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 2; /* Ajusta a ordem de empilhamento */
 }
 
 .whatsapp-button img {
@@ -101,28 +100,6 @@
     height: auto;
     cursor: pointer;
     border-radius: 50%;
-    position: relative; /* Adiciona posição relativa para alinhar o popup */
-}
-
-.popup {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 3; /* Ajusta a ordem de empilhamento */
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    color: #333;
-    bottom: 80px; /* Ajusta a posição do popup em relação ao botão de WhatsApp */
-    right: 20px; /* Ajusta a posição do popup em relação ao botão de WhatsApp */
-    width: 200px; /* Ajusta a largura do popup */
-}
-
-/* Mostrar o popup automaticamente */
-.whatsapp-button:hover .popup {
-    display: block;
 }
 
 /* Mostrar o ícone do menu apenas em dispositivos móveis */
@@ -134,8 +111,22 @@
     .menu-bar {
         display: none;
     }
+}
 
-    .whatsapp-button {
-        bottom: 70px; /* Ajusta a posição do botão de WhatsApp em dispositivos móveis */
-    }
+/* Popup */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 3;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.whatsapp-button:hover .popup {
+    display: block;
 }
