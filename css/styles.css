@@ -56,17 +56,20 @@
 /* Menu lateral */
 .side-menu {
     height: 100%;
-    width: 0;
+    width: 250px; /* Defina a largura fixa do side menu */
     position: fixed;
     z-index: 1000;
     top: 0;
-    left: 0;
+    left: -250px; /* Inicialmente, posicione o side menu fora da tela */
     background-color: #0060b2;
     overflow-x: hidden;
-    transition: 0.5s; 
+    transition: left 0.5s; /* Animação para a posição esquerda */
     padding-top: 60px;
     font-family: 'Arial', sans-serif;
-    transition: width 0.5s ease; /* Adiciona a transição para a largura */
+}
+
+.side-menu.open {
+    left: 0; /* Move o side menu para dentro da tela */
 }
 
 .side-menu a {
@@ -77,7 +80,6 @@
     display: block;
     transition: 0.3s;
     font-family: 'Arial', sans-serif;
-    transition: height 0.5s ease; /* Adiciona a transição para a altura */
 }
 
 .side-menu a[href="https://www.babamateriais.com.br/"] { /* Seleciona o link com o atributo href específico */
@@ -107,6 +109,7 @@
     transform: translateX(5px); /* Desloca o ícone para a direita */
     color: #ec7022; /* Muda a cor do ícone no hover */
 }
+
 
 /* Estilos para o catálogo */
 .catalog {
