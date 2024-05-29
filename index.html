@@ -5,105 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mãos à Obra - Babá Materiais para Construção</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon-baba.png" type="image/x-icon"> <!-- Adiciona o favicon -->
+    <link rel="icon" href="images/favicon-baba.png" type="image/x-icon"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbifELPm94/UFlj/j/0ZjXSkC6meQROZ+Wt/+KVxQOjY4kNH1t5aXO/o09G27pD8Ll5rQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-<div class="appbar">
+    <div class="appbar">
     </div>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
 </div>
 
-<!-- Barra de menu superior -->
-<div class="menu-bar">
-    <a href="#inicio">Início</a>
-    <a href="#basicos">Básicos</a>
-    <a href="#ceramica">Cerâmica</a>
-    <a href="#eletrica">Elétrica</a>
-    <a href="#loucas">Louças</a>
-    <a href="#metais">Metais</a>
-    <a href="#moveis">Móveis</a>
-    <a href="#tintas">Tintas</a>
-    <a href="#amanco">Amanco</a>
-    <a href="pdfs/catalogo.pdf" target="_blank">Baixar</a> <!-- Link para baixar o catálogo -->
-</div>
+    <!-- Barra de menu superior -->
+    <div class="menu-bar">
+        <a href="https://www.babamateriais.com.br/" target="_blank">Visite nosso site</a> 
+        <a href="#inicio">Início</a>
+        <a href="#basicos">Básicos</a>
+        <a href="#ceramica">Cerâmica</a>
+        <a href="#eletrica">Elétrica</a>
+        <a href="#loucas">Louças</a>
+        <a href="#metais">Metais</a>
+        <a href="#moveis">Móveis</a>
+        <a href="#tintas">Tintas</a>
+        <a href="#amanco">Amanco</a>
+        <a href="pdfs/catalogo.pdf" target="_blank">Baixar</a> 
+    </div>
 
-<!-- Ícone de menu para dispositivos móveis -->
-<div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <!-- Ícone de menu para dispositivos móveis -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
-<!-- Menu lateral para dispositivos móveis -->
-<div id="sideMenu" class="side-menu">
-    <a href="#inicio" onclick="closeNav()">Início <i class="fas fa-chevron-right"></i></a>
-    <a href="#basicos" onclick="closeNav()">Básicos <i class="fas fa-chevron-right"></i></a>
-    <a href="#ceramica" onclick="closeNav()">Cerâmica <i class="fas fa-chevron-right"></i></a> 
-    <a href="#eletrica" onclick="closeNav()">Elétrica <i class="fas fa-chevron-right"></i></a>
-    <a href="#loucas" onclick="closeNav()">Louças <i class="fas fa-chevron-right"></i></a>
-    <a href="#metais" onclick="closeNav()">Metais <i class="fas fa-chevron-right"></i></a>
-    <a href="#moveis" onclick="closeNav()">Móveis <i class="fas fa-chevron-right"></i></a>
-    <a href="#tintas" onclick="closeNav()">Tintas <i class="fas fa-chevron-right"></i></a>
-    <a href="#amanco" onclick="closeNav()">Amanco <i class="fas fa-chevron-right"></i></a>
-    <a href="pdfs/catalogo.pdf" target="_blank" onclick="closeNav()">Baixar <i class="fas fa-chevron-right"></i></a> <!-- Link para baixar o catálogo -->
-</div>
+    <!-- Menu lateral para dispositivos móveis -->
+    <div id="sideMenu" class="side-menu">
+        <a href="https://www.babamateriais.com.br/" target="_blank" onclick="closeNav()">Visite nosso site <i class="fas fa-chevron-right"></i></a> 
+        <a href="#inicio" onclick="closeNav()">Início <i class="fas fa-chevron-right"></i></a>
+        <a href="#basicos" onclick="closeNav()">Básicos <i class="fas fa-chevron-right"></i></a>
+        <a href="#ceramica" onclick="closeNav()">Cerâmica <i class="fas fa-chevron-right"></i></a> 
+        <a href="#eletrica" onclick="closeNav()">Elétrica <i class="fas fa-chevron-right"></i></a>
+        <a href="#loucas" onclick="closeNav()">Louças <i class="fas fa-chevron-right"></i></a>
+        <a href="#metais" onclick="closeNav()">Metais <i class="fas fa-chevron-right"></i></a>
+        <a href="#moveis" onclick="closeNav()">Móveis <i class="fas fa-chevron-right"></i></a>
+        <a href="#tintas" onclick="closeNav()">Tintas <i class="fas fa-chevron-right"></i></a>
+        <a href="#amanco" onclick="closeNav()">Amanco <i class="fas fa-chevron-right"></i></a>
+        <a href="pdfs/catalogo.pdf" target="_blank" onclick="closeNav()">Baixar <i class="fas fa-chevron-right"></i></a> 
+    </div>
 
-<div class="catalog">
-    <!-- Aqui você pode adicionar as imagens do seu catálogo -->
-    <img id="inicio" src="images/catalogo/1.jpg" alt="Capa">
-    <br>
-    <img id="basicos" src="images/catalogo/2.jpg" alt="Básicos">
-    <br>
-    <img src="images/catalogo/3.jpg" alt="Básicos">
-    <br>
-    <img id="ceramica" src="images/catalogo/4.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/5.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/6.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/7.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/8.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/9.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/10.jpg" alt="Cerâmica">
-    <br>
-    <img src="images/catalogo/11.jpg" alt="Cerâmica">
-    <br>
-    <img id="eletrica" src="images/catalogo/12.jpg" alt="Elétrica">
-    <br>
-    <img src="images/catalogo/13.jpg" alt="Elétrica">
-    <br>
-    <img src="images/catalogo/14.jpg" alt="Elétrica">
-    <br>
-    <img id="loucas" src="images/catalogo/15.jpg" alt="Louças">
-    <br>
-    <img src="images/catalogo/16.jpg" alt="Louças">
-    <br>
-    <img src="images/catalogo/17.jpg" alt="Louças">
-    <br>
-    <img id="metais" src="images/catalogo/18.jpg" alt="Metais">
-    <br>
-    <img src="images/catalogo/19.jpg" alt="Metais">
-    <br>
-    <img src="images/catalogo/20.jpg" alt="Metais">
-    <br>
-    <img id="moveis" src="images/catalogo/21.jpg" alt="Móveis">
-    <br>
-    <img id="tintas" src="images/catalogo/22.jpg" alt="Tintas e Impermeabilizantes">
-    <br>
-    <img id="amanco" src="images/catalogo/23.jpg" alt="Amanco">
-    <br>
-    <img src="images/catalogo/24.jpg" alt="Contracapa">
-    <!-- Adicione quantas imagens forem necessárias -->
-</div>
+    <div class="catalog">
+        <!-- Aqui você pode adicionar as imagens do seu catálogo -->
+        <img id="inicio" src="images/catalogo/1.jpg" alt="Capa">
+        <br>
+        <img id="basicos" src="images/catalogo/2.jpg" alt="Básicos">
+        <br>
+        <img src="images/catalogo/3.jpg" alt="Básicos">
+        <br>
+        <img id="ceramica" src="images/catalogo/4.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/5.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/6.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/7.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/8.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/9.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/10.jpg" alt="Cerâmica">
+        <br>
+        <img src="images/catalogo/11.jpg" alt="Cerâmica">
+        <br>
+        <img id="eletrica" src="images/catalogo/12.jpg" alt="Elétrica">
+        <br>
+        <img src="images/catalogo/13.jpg" alt="Elétrica">
+        <br>
+        <img src="images/catalogo/14.jpg" alt="Elétrica">
+        <br>
+        <img id="loucas" src="images/catalogo/15.jpg" alt="Louças">
+        <br>
+        <img src="images/catalogo/16.jpg" alt="Louças">
+        <br>
+        <img src="images/catalogo/17.jpg" alt="Louças">
+        <br>
+        <img id="metais" src="images/catalogo/18.jpg" alt="Metais">
+        <br>
+        <img src="images/catalogo/19.jpg" alt="Metais">
+        <br>
+        <img src="images/catalogo/20.jpg" alt="Metais">
+        <br>
+        <img id="moveis" src="images/catalogo/21.jpg" alt="Móveis">
+        <br>
+        <img id="tintas" src="images/catalogo/22.jpg" alt="Tintas e Impermeabilizantes">
+        <br>
+        <img id="amanco" src="images/catalogo/23.jpg" alt="Amanco">
+        <br>
+        <img src="images/catalogo/24.jpg" alt="Contracapa">
+        <!-- Adicione quantas imagens forem necessárias -->
+    </div>
 
-<div class="whatsapp-button">
-    <a href="https://api.whatsapp.com/send?phone=5516999916738&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
-        <img src="images/whatsapp_icon.png" alt="WhatsApp">
-    </a>
-</div>
+    <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=5516999916738&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
+            <img src="images/whatsapp_icon.png" alt="WhatsApp">
+        </a>
+    </div>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -27,6 +27,10 @@
     font-family: 'Arial', sans-serif;
 }
 
+.menu-bar a[href="https://www.babamateriais.com.br/"] { /* Seleciona o link com o atributo href específico */
+    background-color: #ec7022; /* Define a cor de fundo laranja */
+}
+
 .menu-bar a:hover {
     background-color: #ec7022;
 }
@@ -74,6 +78,10 @@
     transition: 0.3s;
     font-family: 'Arial', sans-serif;
     transition: height 0.5s ease; /* Adiciona a transição para a altura */
+}
+
+.side-menu a[href="https://www.babamateriais.com.br/"] { /* Seleciona o link com o atributo href específico */
+    background-color: #ec7022; /* Define a cor de fundo laranja */
 }
 
 .side-menu a:hover {
