@@ -111,10 +111,19 @@
     margin-top: 60px;
 }
 
+/* Estilos gerais para o catálogo */
 .catalog img {
-    max-width: 90%; /* Responsivo para diferentes tamanhos de tela */
+    max-width: 50%; /* Imagens ocupam 50% da largura na tela de computadores */
     height: auto;
 }
+
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .catalog img {
+        max-width: 90%; /* Imagens ocupam 90% da largura em dispositivos móveis */
+    }
+}
+
 
 /* Estilos para o botão de WhatsApp */
 .whatsapp-button {
